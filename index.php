@@ -109,7 +109,6 @@ include('db.php');
                 <div class="modal-body">
                     <form action="add.php" method="POST" enctype="multipart/form-data">
 
-                        <!-- This is test for New Card Activate Form  -->
                         <!-- This is Address with email id  -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
