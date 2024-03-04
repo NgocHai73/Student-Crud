@@ -341,3 +341,83 @@ body {
 .btn:hover {
    background-color: darkred;
 }
+body {
+   font-family: Arial, sans-serif;
+}
+
+.taskbar {
+   background-color: #333;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.taskbar a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+.taskbar a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.product {
+   border: 1px solid #ddd;
+   margin-bottom: 20px;
+   padding: 20px;
+}
+
+.product img {
+   width: 100%;
+   height: auto;
+}
+
+.product h3 {
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+}
+
+.product p {
+   margin: 0;
+   padding: 0;
+}
+
+.total-price {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   padding: 10px;
+   background-color: #f8f9fa;
+   border: 1px solid #dee2e6;
+}
+
+.btn-pay {
+   display: inline-block;
+   background-color: #008CBA; /* Màu nền của nút */
+   border: none; /* Xóa viền */
+   color: white; /* Màu chữ */
+   padding: 15px 32px; /* Đệm bên trong nút */
+   text-align: center; /* Căn lề chữ ở giữa */
+   text-decoration: none; /* Xóa gạch chân */
+   display: inline-block;
+   font-size: 16px; /* Kích thước chữ */
+   margin: 4px 2px;
+   cursor: pointer; /* Biến đổi con trỏ khi di chuột qua nút */
+   border-radius: 12px; /* Làm tròn góc của nút */
+   transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi khi di chuột qua nút */
+}
+
+.btn-pay:hover {
+   background-color: #4CAF50; /* Thay đổi màu nền khi di chuột qua nút */
+   color: white; /* Thay đổi màu chữ khi di chuột qua nút */
+}

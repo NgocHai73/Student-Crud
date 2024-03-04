@@ -64,8 +64,8 @@ $select = mysqli_query($conn, "SELECT * FROM products");
     <div class="taskbar">
         <a href="index.php"> Home</a>
         <a href="admin_page.php"> Product</a>
-
-        <a href="#">Logout</a>
+        <a href="cart.php"> Cart</a>
+        
     </div>
     <div class="container">
         <a href="admin_add_page.php" class="btn">Add Product</a>
@@ -106,7 +106,7 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                         <a href="javascript:void(0);" onclick="confirmDelete(<?php echo $row['id']; ?>)" class="btn">
                             <i class="fas fa-trash"></i> delete
                         </a>
-                        <!-- ... rest of your loop ... -->
+
 
 
                     </td>
