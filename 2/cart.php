@@ -41,6 +41,7 @@ if (isset($_GET['action'])) {
     <div class="taskbar">
         <a href="index.php">Home</a>
         <a href="admin_page.php">Products</a>
+        <a href="admin_category_page.php">Category</a>
         <a href="cart.php">Cart</a>
        
     </div>

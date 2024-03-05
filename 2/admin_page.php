@@ -32,6 +32,7 @@ if (isset($_GET['delete'])) {
 }
 
 $select = mysqli_query($conn, "SELECT * FROM products");
+$select = mysqli_query($conn, "SELECT p.*, c.name as category_name FROM products p LEFT JOIN categories c ON p.category = c.id");
 
 ?>
 
@@ -64,6 +65,7 @@ $select = mysqli_query($conn, "SELECT * FROM products");
     <div class="taskbar">
         <a href="index.php"> Home</a>
         <a href="admin_page.php"> Product</a>
+        <a href="admin_category_page.php"> Category</a>
         <a href="cart.php"> Cart</a>
         
     </div>
@@ -87,6 +89,7 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                     <tr>
                         <th>product image</th>
                         <th>product name</th>
+                        <th>product categories</th>
                         <th>product price</th>
                         <th>action</th>
                     </tr>
@@ -98,6 +101,7 @@ $select = mysqli_query($conn, "SELECT * FROM products");
                             onclick="showProductDetails(<?php echo $row['id']; ?>, '<?php echo addslashes($row['name']); ?>', '<?php echo $row['price']; ?>', '<?php echo addslashes($row['description']); ?>', '<?php echo $row['image']; ?>')">
                     </td>
                     <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['category_name']; ?></td>
                     <td><?php echo $row['price']; ?> VNĐ</td>
                     <td>
                         <a href="admin_update.php?edit=<?php echo $row['id']; ?>" class="btn"> <i

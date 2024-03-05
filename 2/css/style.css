@@ -421,3 +421,31 @@ body {
    background-color: #4CAF50; /* Thay đổi màu nền khi di chuột qua nút */
    color: white; /* Thay đổi màu chữ khi di chuột qua nút */
 }
+body, h1, h2, h3, p, ul, li {
+   margin: 0;
+   padding: 0;
+}
+
+/* Set the background color and font for the body */
+body {
+   background-color: #f5f5f5;
+   font-family: Arial, sans-serif;
+}
+.container {
+   max-width: 800px;
+   margin: 20px auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the "Add Category" button */
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+}

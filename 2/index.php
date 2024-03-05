@@ -30,6 +30,7 @@
     <div class="taskbar">
         <a href="index.php">Home</a>
         <a href="admin_page.php">Products</a>
+        <a href="admin_category_page.php">Category</a>
         <a href="cart.php">Cart</a>
     </div>
     <div class="content">
@@ -45,6 +46,7 @@
                     echo "<img src='uploaded_img/{$row['image']}' alt='{$row['name']}'>";
                     echo "<h3>{$row['name']}</h3>";
                     echo "<p>Price: {$row['price']} VNĐ</p>";
+                    
                     echo "<p>{$row['description']}</p>";
                     echo "<a href='#' class='add-to-cart' data-product-id='{$row['id']}'>Thêm vào giỏ hàng</a>";
                     echo "</div>";
